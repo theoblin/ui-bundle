@@ -1,11 +1,11 @@
 <?php
 
-namespace TheoBlin\UiBundle\Service;
+namespace TheoBlin\UiBundle\ButtonService;
 
-class UiService
+class ButtonService
 {
     public function sayHello(): string
     {
-        return 'Bonjour depuis le bundle ! 👋';
+        return 'Bouton';
     }
 }
