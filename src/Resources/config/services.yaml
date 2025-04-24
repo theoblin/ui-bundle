@@ -1,9 +1,7 @@
 services:
-    TheoBlin\UiBundle\Service\UiService:
+    TheoBlin\UiBundle\Service\BoutonService:
       public: true
       autowire: true
       autoconfigure: true
     TheoBlin\UiBundle\Twig\UiExtension:
-        tags: ['twig.extension']
-        arguments:
-            $someService: '@theoblin.ButtonService'
+      tags: ['twig.extension']
