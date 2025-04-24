@@ -6,6 +6,7 @@ namespace TheoBlin\UiBundle\Twig;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 use Twig\Environment;
+use Symfony\Component\HttpFoundation\Response;
 
 class ButtonExtension extends AbstractExtension
 {
@@ -29,7 +30,7 @@ class ButtonExtension extends AbstractExtension
     public function renderButton(string $label, string $type = 'primary', string $url = '#'): string
     {
         // Exemple basique de génération d'un bouton
-        return $this->twig->render('button.html.twig', [
+        return $this->twig->render('@Ui/button.html.twig', [
             'label' => $label,
             'type'  => $type,
             'url'   => $url
