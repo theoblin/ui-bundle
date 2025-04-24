@@ -29,7 +29,7 @@ class ButtonExtension extends AbstractExtension
     public function renderButton(string $label, string $type = 'primary', string $url = '#'): string
     {
         // Exemple basique de génération d'un bouton
-        return $this->twig->render('../Templates/button.html.twig', [
+        return $this->twig->render('@UiBundle/button.html.twig', [
             'label' => $label,
             'type'  => $type,
             'url'   => $url
