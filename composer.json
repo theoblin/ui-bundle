@@ -1,0 +1,22 @@
+{
+    "name": "theoblin/bonjourbundle",
+    "type": "symfony-bundle",
+    "description": "Step-by-step Symfony bundle tutorial",
+    "keywords": ["php", "symfony", "reusable bundle", "tutorial"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "theoblin",
+            "email": "tets@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheoBlin\\BonjourBundle\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/dependency-injection": "^7.2",
+        "symfony/http-kernel": "^7.2"
+    }
+}
