@@ -1,5 +1,5 @@
 {
-    "name": "theoblin/bonjourbundle",
+    "name": "theoblin/ui-bundle",
     "type": "symfony-bundle",
     "description": "Step-by-step Symfony bundle tutorial",
     "keywords": ["php", "symfony", "reusable bundle", "tutorial"],
@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "TheoBlin\\BonjourBundle\\": "src/"
+            "TheoBlin\\UiBundle\\": "src/"
         }
     },
     "require": {
