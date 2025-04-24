@@ -1,5 +1,5 @@
 <?php
-class UiExtension extends \Twig\Extension\AbstractExtension implements \Twig\Extension\GlobalsInterface
+class ButtonExtension extends \Twig\Extension\AbstractExtension implements \Twig\Extension\GlobalsInterface
 {
     public function getGlobals(): array
     {
