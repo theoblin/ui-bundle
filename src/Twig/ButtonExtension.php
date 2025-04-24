@@ -1,12 +1,31 @@
 <?php
-class ButtonExtension extends \Twig\Extension\AbstractExtension implements \Twig\Extension\GlobalsInterface
+
+
+namespace TheoBlin\UiBundle\Twig;
+
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
+
+class ButtonExtension extends AbstractExtension
 {
-    public function getGlobals(): array
+    public function getFunctions()
     {
+        // Déclaration d'une nouvelle fonction Twig qui peut être utilisée dans les templates
         return [
-            'btn_content' => 'Je suis le bouton',
-            'ui_theme' => 'dark',
-            'ui_version' => 'v1.2.3',
+            new TwigFunction('button', [$this, 'renderButton']),
         ];
+    }
+
+    /**
+     * Cette fonction sera appelée lorsque 'button()' sera utilisée dans un template Twig.
+     */
+    public function renderButton(string $label, string $type = 'primary', string $url = '#'): string
+    {
+        // Exemple basique de génération d'un bouton
+        return $this->render('../Templates/button.html.twig', [
+            'label' => $label,
+            'type'  => $type,
+            'url'   => $url
+        ]);
     }
 }
