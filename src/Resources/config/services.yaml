@@ -1,7 +1,5 @@
 services:
     TheoBlin\UiBundle\Service\BoutonService:
-      public: true
-      autowire: true
-      autoconfigure: true
-    TheoBlin\UiBundle\Twig\ButtonExtension:
-      tags: ['twig.extension']
+    public: true
+    autowire: true
+    autoconfigure: true
