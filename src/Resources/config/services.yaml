@@ -3,5 +3,5 @@ services:
       public: true
       autowire: true
       autoconfigure: true
-    TheoBlin\UiBundle\Twig\UiExtension:
+    TheoBlin\UiBundle\Twig\ButtonExtension:
       tags: ['twig.extension']
