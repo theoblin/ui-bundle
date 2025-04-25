@@ -4,7 +4,7 @@ namespace TheoBlin\UiBundle\Twig\Components;
 
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
-#[AsTwigComponent('alert', template: '@UiBundle/alert.html.twig')]
+#[AsTwigComponent('alert', template: '@Ui/alert.html.twig')]
 class Alert
 {
     public string $type = 'success';
