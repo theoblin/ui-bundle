@@ -5,5 +5,5 @@ services:
       autoconfigure: true
     TheoBlin\UiBundle\Twig\ButtonExtension:
         arguments:
-            $twig: '@twig'  # Injecte le service Twig
+            $twig: '@twig'  
         tags: ['twig.extension']
