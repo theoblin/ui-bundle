@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Twig\Components;
+namespace TheoBlin\UiBundle\Twig\Components;
 
 use Symfony\UX\TwigComponent\Attribute\AsTwigComponent;
 
